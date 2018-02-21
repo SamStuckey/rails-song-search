@@ -1,0 +1,21 @@
+- if @songs.blank?
+  Sorry, didn't find anything!
+- else
+  %table
+    %tr
+      %th
+        Song Title
+      %th
+        Album Title
+      %th
+        Artist Name
+    - @songs.each do |song|
+      %tr
+        %td
+          = song.title
+        %td
+          = song.album.title
+        %td
+          = song.artist.name
+
+

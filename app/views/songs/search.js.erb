@@ -1,2 +1,1 @@
-$('.song-list').append("<%= @songs %>")
-console.log('we made it')
+$('.song-list').html("<%= j render 'songs/results' %>")
