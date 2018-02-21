@@ -1,8 +1,8 @@
-- if  @results.blank?
+- if  @songs.blank?
   Sorry, nothing was found!
 - else
   %ul
-    - @results.each do |result|
+    - @songs.each do |result|
       %li
         - result.title
         - result.album.title

@@ -1,5 +1,8 @@
 class SongsController < ApplicationController
   def search
-    raise 'we made it'
+    @songs = Song.all
+    respond_to do |format|
+      format.js { render json: @songs }
+    end
   end
 end
