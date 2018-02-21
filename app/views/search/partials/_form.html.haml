@@ -1,11 +1,11 @@
-= form_tag results_search_path, remote: true, class: 'song-search-form' do
+= form_tag songs_path, remote: true, method: :get, class: 'song-search-form' do
   = label_tag :artist, "artist"
-  = text_field_tag :artist, @query[:artist], placeholder: 'artist name'
+  = text_field_tag :artist, "" , placeholder: 'artist name'
 
   = label_tag :album, "album"
-  = text_field_tag :album, @query[:album], placeholder: 'album'
+  = text_field_tag :album, "", placeholder: 'album'
 
   = label_tag :song, "song"
-  = text_field_tag :song, @query[:song], placeholder: 'song'
+  = text_field_tag :song, "", placeholder: 'song'
 
   = submit_tag "Submit"
