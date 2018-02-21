@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   root "search#index"
 
-  resources :songs do
-    collection do
-      get :search
-    end
+  resources :search, only: [:index] do
+    collection { get :results }
   end
 end
