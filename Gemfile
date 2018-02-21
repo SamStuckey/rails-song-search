@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'haml-rails', '~> 1.0.0'
+gem "jquery-rails",             "~> 4.3.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
