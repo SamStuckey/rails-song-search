@@ -1,5 +1,11 @@
-- form_tag songs_search_path, method: :get, class: 'song-search-form' do
-  = input_tag :artist
-  = input_tag :album
-  = input_tag :song
+= form_tag search_songs_path, method: :get, class: 'song-search-form' do
+  = label_tag :artist, "artist"
+  = text_field_tag :artist, @query[:artist], placeholder: 'artist name'
+
+  = label_tag :album, "album"
+  = text_field_tag :album, @query[:album], placeholder: 'album'
+
+  = label_tag :song, "song"
+  = text_field_tag :song, @query[:song], placeholder: 'song'
+
   = submit_tag "Submit"

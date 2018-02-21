@@ -1,1 +1,9 @@
-hello results
+- if  @results.blank?
+  Sorry, nothing was found!
+- else
+  %ul
+    - @results.each do |result|
+      %li
+        - result.title
+        - result.album.title
+        - result.artist.name
