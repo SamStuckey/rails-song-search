@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run localy:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone branch to local
+2. Run `bundle install`
+3. Set up the database and seed with `bundle exec rake db:create db:migrate db:seed`
+4. Start rails server `rails s`
+5. In a browser access the app at `localhost:3000`
