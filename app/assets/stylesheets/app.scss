@@ -1,14 +1,5 @@
 $app-grey: #D2D2Da;
 
-// # [wipn] REMOVE
-div {
-  outline: solid 1px blue;
-}
-
-h3#main-header{
-  font-size: 30pt;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +15,10 @@ body {
   align-items: center;
 }
 
+h3#main-header{
+  font-size: 30pt;
+}
+
 .song-search-form {
   width: 600px;
   display: flex;
@@ -32,14 +27,42 @@ body {
 }
 
 .search-field {
-  width: 200px;
+  // width: 150px;
   padding: 5px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+th {
+  background: darken( $app-grey, 10% );
+}
+
+tr {
+  background: lighten( $app-grey, 5% );
+  margin-bottom: 5px;
+}
+
+td {
+  width: 300px;
+  padding: 2px;
 }
 
 // smaller screen (tablet / phone)
 @media screen and (max-width: 750px) {
+  tr {
+    display: flex;
+    flex-direction: column;
+
+    &.headers {
+    visibility: hidden;
+    }
+  }
+
+  td {
+    width: 400px;
+  }
+
   h3#main-header {
     font-size: 20pt;
   }
