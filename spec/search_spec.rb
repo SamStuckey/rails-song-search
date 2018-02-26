@@ -1,9 +1,17 @@
-ENV["RAILS_ENV"] ||= "test"
-require File.expand_path("../../config/environment", __FILE__)
-require "rspec/rails"
+require 'spec_helper'
 
 RSpec.describe "search", type: :request do
-  it 'works' do
-    expect(true).to be true
+  before(:each) do
+    artist = Artist.create!(name: 'someone')
+    album = Album.create!(artist: artist, title: 'foo')
+    song = Song.create!(album: album, title: 'bar')
+  end
+
+  it 'creates assets' do
+    expect(Song.count).to eq 1
+  end
+
+  it 'creates assets again' do
+    expect(Song.count).to eq 1
   end
 end
