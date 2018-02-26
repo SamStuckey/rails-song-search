@@ -1,0 +1,51 @@
+$app-grey: #D2D2Da;
+
+// # [wipn] REMOVE
+div {
+  outline: solid 1px blue;
+}
+
+h3#main-header{
+  font-size: 30pt;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $app-grey;
+  height: 100%;
+}
+
+#app-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.song-search-form {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-field {
+  width: 200px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+// smaller screen (tablet / phone)
+@media screen and (max-width: 750px) {
+  h3#main-header {
+    font-size: 20pt;
+  }
+
+  .song-search-form {
+    flex-direction: column;
+  }
+}
+//
