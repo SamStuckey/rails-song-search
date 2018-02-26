@@ -6,6 +6,7 @@ body {
   padding: 0;
   background: $app-grey;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 #app-wrapper {
@@ -40,7 +41,8 @@ h3#main-header{
   input.search-term {
     width: 150px;
     height: 20px;
-    border: darken( $app-grey, 50% );
+    border: 1px solid darken( $app-grey, 10% );
+    padding-left: 10px;
   }
 
   .button {
@@ -60,7 +62,7 @@ tr {
 }
 
 td {
-  width: 300px;
+  width: 250px;
   padding: 2px;
 }
 
@@ -76,7 +78,7 @@ td {
   }
 
   td {
-    width: 400px;
+    width: 350px;
   }
 
   h3#main-header {
