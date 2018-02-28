@@ -19,4 +19,4 @@
         %td
           = song.artist.name
 
-
+  = will_paginate @songs, params: { is_active: true }

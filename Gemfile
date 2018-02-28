@@ -7,6 +7,7 @@ end
 
 gem 'haml-rails',               '~> 1.0.0'
 gem "jquery-rails",             '~> 4.3.0'
+gem "will_paginate",            "~> 3.1.0"
 
 gem 'rails', '~> 5.1.5'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
