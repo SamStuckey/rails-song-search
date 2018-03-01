@@ -8,6 +8,6 @@ class Song < ApplicationRecord
     songs = songs.joins(:album).where("albums.title LIKE ?", "%#{album}%") if album
     songs = songs.joins(:artist).where("artists.name LIKE ?", "%#{artist}%") if artist
 
-    songs.paginate(page: page, per_page: 50)
+    songs.paginate(page: page, per_page: 25)
   end
 end

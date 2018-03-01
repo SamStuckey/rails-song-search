@@ -1,6 +1,5 @@
 class SongsController < ApplicationController
   def index
-    debugger
     @songs = Song.find_by_query(
       song: params[:song],
       album: params[:album],
